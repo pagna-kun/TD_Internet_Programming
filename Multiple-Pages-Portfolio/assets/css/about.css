@@ -63,57 +63,80 @@ li.is_active a::after{
 }
 
 /* page content*/
-.home_container{
-    position: fixed;
-    right: 0px;
+.about_container{
+    position: absolute;
+    top: 10px;
+    right: 10px;
     width: 75%;
     height: 100%;
-    background-image: url(../img/home_page_bg_2.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    right: 0px;
 }
-.home_container_mask{
+.container_head{
     position: relative;
-    height: 100%;
-    background-color: rgba(46, 46, 46, 0.7);
+    width: 100%;
+    height: 100px;
 }
-.home_text{
-    position: absolute;
-    top: 10%;
-    left: 20%;
-    width: 60%;
-    height: auto;
-    color:white;
-
-}
-.text_name{
+.head_about{
     position: relative;
-    text-align: center;
-    width: auto;
+    top: 50px;
+    background-color: #f4c052;
+    width: 230px;
+    margin: -11px;
+}
+.head_about h1{
+    color: white;
+    margin: 0px;
+    font-weight: 400;
+    padding-left: 100px;
+}
+.head_aboutText{
+    position: relative;
+    width: 50%;
+    left: 250px;
+    top: 15px    
+}
+.head_aboutText p{
+    color:#ada6a6
+}
+.container_body{
+    position: relative;
+    /* background-color: aqua; */
+    margin-top: 20px;
+    margin-left: 90px;
+    width: 90%;
     height: auto;
 }
-.text_name h1{
+.container_body h2{
     margin: 0px;
-    font-size: 100px;
     font-weight: 400;
-}
-.text_name h2{
-    margin: 0px;
-    font-size: 30px;
-    font-weight: 200;
-}
-.text_detail{
-    margin-left: 170px;
-}
-.text_detail b{
-    margin: 0px;
-    font-size: 20px;
-    font-weight: 400;
-    padding-right: 20px;
     text-decoration: underline;
-    text-decoration-color:rgba(255, 179, 0, 1);
 }
-.text_detail p{
-    font-size: 17px;
-    font-weight: 300;
+.container_body p{
+    color: #ada6a6;
+}
+.body_description{
+    position: relative;
+    width: 400px;
+}
+.body_description h2{
+    text-decoration: none;
+}
+.body_comment{
+    /* background-color: aqua; */
+    position: absolute;
+    left: 400px;
+    top: 0px;
+    width: auto;
+    padding-left: 70px;
+}
+.body_comment img{
+    width: 70px;
+}
+.body_service{
+    position: relative;
+    width: 100%;
+    
+}
+.body_service img{
+    width: 100px;
 }
