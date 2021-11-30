@@ -111,7 +111,6 @@ li.is_active a::after{
     font-weight: 400;
     padding-right: 20px;
     text-decoration: underline;
-    
     text-decoration-color:rgba(255, 179, 0, 1);
 }
 .text_detail p{
