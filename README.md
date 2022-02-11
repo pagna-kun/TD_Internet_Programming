@@ -1,2 +1,2 @@
 # TD_Internet_Programming 🖥️
-  TD5 - Apply basic javascript
+  TD6 - Javascript Promise, Async/Await

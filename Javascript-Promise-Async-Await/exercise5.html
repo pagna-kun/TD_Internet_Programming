@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            display: flex;
+        }
+        .data{
+            display: flex;
+        }
+        .space{
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Loading...</h1>
+    <div class="header">
+        <div class="space">
+            <h2>name</h2>
+            <div id="name"></div>
+        </div>
+        <div class="space">
+            <h2>username</h2>
+            <div id="username"></div>
+        </div>
+        <div class="space">
+            <h2>email</h2>
+            <div id="email"></div>
+        </div>
+        <div class="space">
+            <h2>website</h2>
+            <div id="website"></div>
+        </div>
+        <div class="space">
+            <h2>phone number</h2>
+            <div id="phone"></div>
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    const getData = axios.get('https://jsonplaceholder.typicode.com/users');
+    getData.then((result)=>{
+        console.log(result.data);
+        var data = result.data;
+        for(let i=0; i<data.length; i++){
+            document.getElementById("name").innerHTML += `<div>${data[i].name}</div>`   
+            document.getElementById("username").innerHTML += `<div>${data[i].username}</div>`
+            document.getElementById("email").innerHTML += `<div>${data[i].email}</div>`
+            document.getElementById("website").innerHTML += `<div>${data[i].website}</div>`
+            document.getElementById("phone").innerHTML += `<div>${data[i].phone}</div>`
+        }
+        
+    })
+</script>
+</html>
